@@ -45,6 +45,13 @@ async function run() {
         res.send(result)
     })
 
+    app.get('/product/:brand' , async(req,res) => {
+      const brandName = productCollection.find({category:req.params.brand});
+      const result = await brandName.toArray()
+     
+  
+        res.send(result)
+    })
 
 
 
