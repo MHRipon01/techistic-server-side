@@ -67,6 +67,23 @@ async function run() {
     })
 
 
+    app.get("/cartedProduct", async (req, res) => {
+      const cursor = cartedProductCollection.find();
+      const result = await cursor.toArray();
+      res.send(result);
+      console.log(result);
+    });
+
+
+
+    app.delete('/cartedProduct/:id',async(req,res) => {
+      const id = req.params.id;
+      console.log(id);
+      const query = {_id: new ObjectId(id)}
+      const result = await cartedProductCollection.deleteOne(query)
+      res.send(result)
+    })
+
 
     app.get("/productDetails/:id", async (req, res) => {
       const id = req.params.id;
