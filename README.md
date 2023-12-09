@@ -41,9 +41,6 @@ Techistic is an online shopping platform built on Node.js, Express, and MongoDB 
 
 ## Contributors
 
-- [Your Name](https://github.com/yourusername)
-- [Contributor Name](https://github.com/contributorusername)
+- [MH Ripon](https://github.com/yourusername)
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
